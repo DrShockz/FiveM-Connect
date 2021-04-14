@@ -16,5 +16,5 @@
 - `"join_count": "250"` - The player count at which you auto join if it's less than.
 - Step 3: Save the config file.
 - Step 4: Run the program using `node app.js`.
-- 
+
 **Enjoy!**
