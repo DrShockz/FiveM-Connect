@@ -15,6 +15,6 @@
 - `"server_port": "30120",` - The servers port leave if default.
 - `"join_count": "250"` - The player count at which you auto join if it's less than.
 - Step 3: Save the config file.
-- Step 4: Run the program using `node app.js`.
+- Step 4: Run the program using `node app.js` or using the batch file included!
 
 **Enjoy!**
