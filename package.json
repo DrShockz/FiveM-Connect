@@ -1,0 +1,16 @@
+{
+  "name": "fivem-connect",
+  "version": "1.0.0",
+  "description": "Auto connects you to a FiveM server once the player count drops below a specified number.",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrShockz/FiveM-Connect.git"
+  },
+  "author": "DrShockz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrShockz/FiveM-Connect/issues"
+  },
+  "homepage": "https://github.com/DrShockz/FiveM-Connect#readme"
+}

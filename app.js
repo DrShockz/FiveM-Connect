@@ -25,14 +25,16 @@ const srv = new FiveM.Server(`${server_ip}:${server_port}`) // Create server wit
 
 function getPlayers() {
     srv.getPlayers().then(function(data) {
+        console.clear();
         if (data < join_count) {
             console.log(`Player count reached, connecting to server.`)
             open(`fivem://connect/${server_ip}:${server_port}`);
             setTimeout(() => {process.exit()}, 2000);
         } else {
-            console.log(`There are too many players, can't join. (${data} players)`)
+            console.log(`Current Player Count: ${data}`)
+            console.log(`${data - join_count} people until server auto-joins!`)
         }
     }).catch(err => { console.log("Failed to load config!"); setTimeout(() => {process.exit()}, 2000);});
-    setTimeout(getPlayers, 10000);
+    setTimeout(getPlayers, 60000);
 }
-setTimeout(getPlayers, 10000);
+setTimeout(getPlayers, 60000);
